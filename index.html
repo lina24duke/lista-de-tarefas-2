@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contador 18</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            body{
+                background: rgb(90, 90, 228);
+                color:bisque;
+                text-align: center;
+                min-height: 100vh;
+
+            section {
+                background: rgb(20, 20, 182);
+            }
+
+            }    
+
+            }           
+            p {
+                font-size: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+        <h1>Contador 18</h1>
+        <p>0</p>
+        <button onclick="diminuir()">Menos</button>
+        <button onclick="aumentar()">Mais</button>
+        <button onclick="reset()">reset</button>
+    </section>
+    <section>
+        <p id="segundoP"></p>
+        <button onclick="menos1()"> Menos</button>
+        <button onclick="mais1()"> Mais</button>
+    </section>
+    <script>
+        let numero = 0
+        let numero2 = 100
+        mostrarNaTela()
+
+        function reset() {  
+        numero = 0 
+        mostrarNaTela() 
+               }
+        function aumentar() {
+            numero = numero + 1
+            mostrarNaTela()
+        }
+        function diminuir() {
+            numero = numero - 1
+            mostrarNaTela()
+        }
+        function mostrarNaTela() {
+            const p = document.querySelector("p")
+            p.innerText = numero
+        }
+        mostrarNaTela()
+
+        
+         function menos1() {
+            numero2 = numero2 - 1
+            mostrarNaTela1()
+           }
+            function mais1() {
+            numero2 = numero2 + 1
+            console.log(numero)
+            mostrarNaTela1()
+        
+          }
+        function mostrarNaTela1() {
+            const segundoP = document.getElementById("segundoP")
+            segundoP.innerText = numero2
+        }
+        mostrarNaTela1()
+
+
+
+
+        let valorNaConta = 100
+        let salario = 8000
+
+        valorNaConta = valorNaConta + salario
+
+
+        let primeiroNumero = 5
+        let segundoNumero = 10
+
+        segundoNumero = primeiroNumero
+
+        console.log(valorNaConta)
+        
+    </script>
+    </body>
+</html>
